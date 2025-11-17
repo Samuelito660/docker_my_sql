@@ -1,0 +1,26 @@
+id,nome,cognome,email,data nascita,indirizzo,città,provincia
+1,Mario,Rossi,mario.rossi@example.com,15/03/1985,"Via Roma 10",Milano,MI
+2,Laura,Bianchi,laura.bianchi@example.com,22/08/1992,"Corso Italia 45",Torino,TO
+3,Giuseppe,Verdi,giuseppe.verdi@example.com,04/11/1976,"Piazza Duomo 1",Firenze,FI
+4,Anna,Neri,anna.neri@example.com,29/01/2000,"Viale della Libertà 7",Napoli,NA
+5,Francesco,Gialli,francesco.gialli@example.com,10/06/1963,"Via Garibaldi 33",Bari,BA
+6,Marco,Bruno,marco.bruno@example.com,01/05/1995,"Via Delle Rose 8",Venezia,VE
+7,Sofia,Rizzo,sofia.rizzo@example.com,12/10/1988,"Largo Fiume 20",Palermo,PA
+8,Luca,Serra,luca.serra@example.com,19/02/1971,"Via Dei Mille 50",Bologna,BO
+9,Elena,Manca,elena.manca@example.com,07/07/2001,"Piazzale Europa 15",Genova,GE
+10,Andrea,Conti,andrea.conti@example.com,25/09/1980,"Vicolo Stretto 3",Verona,VR
+11,Sara,Galli,sara.galli@example.com,14/04/1998,"Corso Vittorio Emanuele 12",Catania,CT
+12,Pietro,Marini,pietro.marini@example.com,03/03/1979,"Via Della Spiga 6",Padova,PD
+13,Chiara,Lombardi,chiara.lombardi@example.com,17/12/1993,"Piazza Dante 9",Brescia,BS
+14,Giovanni,Moretti,giovanni.moretti@example.com,28/06/1965,"Viale Mazzini 22",Taranto,TA
+15,Federica,Ferrara,federica.ferrara@example.com,11/01/1984,"Via San Giorgio 44",Prato,PO
+16,Matteo,Santoro,matteo.santoro@example.com,20/11/1990,"Largo Volta 1",Modena,MO
+17,Valentina,Riva,valentina.riva@example.com,06/08/1975,"Corso Francia 30",Reggio Emilia,RE
+18,Davide,Silvestri,davide.silvestri@example.com,18/07/2003,"Via Dei Platani 5",Perugia,PG
+19,Silvia,Esposito,silvia.esposito@example.com,30/05/1982,"Piazza Della Repubblica 2",Livorno,LI
+20,Riccardo,Amato,riccardo.amato@example.com,23/02/1970,"Via XX Settembre 11",Salerno,SA
+21,Angela,Colombo,angela.colombo@example.com,09/10/1996,"Viale Certosa 16",Novara,NO
+22,Emanuele,Martini,emanuele.martini@example.com,05/12/1987,"Via San Rocco 7",Ancona,AN
+23,Roberta,Fontana,roberta.fontana@example.com,26/03/1969,"Piazza Italia 3",Latina,LT
+24,Stefano,De Angelis,stefano.deangelis@example.com,02/09/1991,"Corso Umberto I 25",Pescara,PE
+25,Ilaria,Russo,ilaria.russo@example.com,13/04/1973,"Via Aurelia 100",Aosta,AO
