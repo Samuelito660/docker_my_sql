@@ -31,11 +31,11 @@ $result = $conn->query("SELECT id, nome, email FROM utenti");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestione Utenti</title>
+    <title>Nuova Pagina</title>
 </head>
 <body>
 
-<h2>Gestione Utenti</h2>
+<h2>Inserisci Nuovo Utente</h2>
 
 <form method="POST">
     <input type="text" name="nome" placeholder="Nome">
