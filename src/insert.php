@@ -48,7 +48,7 @@ $result = $conn->query("SELECT id, nome, email FROM utenti");
         <th style="color: lightseagreen;">ID</th>
         <th>Nome</th>
         <th>Email</th>
-       <strong> <th style="color: red;">Azioni</th> </strong>
+       <strong> <th style="color: black;">Azioni</th> </strong>
     </tr>
     <?php
     while ($row = $result->fetch_assoc()) {
@@ -60,7 +60,11 @@ $result = $conn->query("SELECT id, nome, email FROM utenti");
                     <form method='POST' style='display:inline;'>
                         <input type='hidden' name='azione' value='elimina'>
                         <input type='hidden' name='id' value='{$row['id']}'>
-                         <button type='submit' style='color: red;'>🗑️Elimina🗑️</button> 
+                         <button type='submit' style='color: red;'>🗑️Elimina🗑️</button>
+
+                        
+                         <button type='submit' style='color: orange;'>🛠️Modifica🛠️</button> 
+
 
                     </form>
                 </td>
