@@ -1,8 +1,6 @@
 <?php
-$servername = 'db';
-$username = 'myuser';
-$password = 'mypassword';
-$database = 'myapp_db';
+
+include_once("db_connect.php");
 
 echo $servername . "<br />";
 echo $username   . "<br />";
