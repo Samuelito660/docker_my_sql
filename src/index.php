@@ -22,5 +22,5 @@ while ($row = $result->fetch_array()) {
 }
 echo "</pre>";
 
-$conn->close();
+
 ?>

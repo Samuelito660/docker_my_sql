@@ -18,6 +18,18 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['id']) && isset($_POST[
     $conn->query("DELETE FROM utenti WHERE id = $id");
 }
 
+if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['azione']) && $_POST['azione'] == 'modifica') {
+    $id = $_POST['id'];
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $conn->query("UPDATE utenti SET nome='$nome', email='$email' WHERE id=$id");
+}
+
+$modifica_id = null;
+if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['azione']) && $_POST['azione'] == 'mostra_modifica') {
+    $modifica_id = $_POST['id'];
+}
+
 $result = $conn->query("SELECT id, nome, email FROM utenti");
 
 ?>
@@ -57,11 +69,11 @@ $result = $conn->query("SELECT id, nome, email FROM utenti");
                 <td>{$row['nome']}</td>
                 <td>{$row['email']}</td>
                 <td>
-                    <form method='POST' style='display:inline;'>
-                        <input type='hidden' name='azione' value='elimina'>
-                        <input type='hidden' name='id' value='{$row['id']}'>
-                         <button type='submit' style='color: red;'>🗑️Elimina🗑️</button>
+                    </form>
+                </td>
+              </tr>";
 
+              echo "<tr data-row=\"{$row['id']}\" style=\"display: none;\">
                         
                          <button type='submit' style='color: orange;'>🛠️Modifica🛠️</button> 
 
@@ -69,7 +81,21 @@ $result = $conn->query("SELECT id, nome, email FROM utenti");
                     </form>
                 </td>
               </tr>";
+
+               if ($modifica_id == $row['id']) {
+                    echo "<tr style='background:#f0f0f0;'>
+                    <td colspan='4'>
+                        <form method='POST'>
+                            <input type='hidden' name='azione' value='modifica'>
+                            <input type='hidden' name='id' value='{$row['id']}'>
+                            <input type='text' name='nome' value='{$row['nome']}'>
+                            <input type='email' name='email' value='{$row['email']}'>
+                            <button type='submit'>Salva</button>
+                        </form>
+                    </td>
+              </tr>";
     }
+}
     ?>
 </table>
 
